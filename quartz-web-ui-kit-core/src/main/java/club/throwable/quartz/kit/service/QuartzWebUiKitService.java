@@ -165,15 +165,18 @@ public class QuartzWebUiKitService implements SmartInitializingSingleton, Initia
             if ("repeatCount".equalsIgnoreCase(key)) {
                 expression.setRepeatCount(Integer.valueOf(value));
             }
+            if ("startAt".equalsIgnoreCase(key)) {
+                expression.setStartAt(Long.valueOf(value));
+            }
+        }
+        if (null == expression.getCron() && null == expression.getIntervalInMilliseconds()) {
+            throw new QuartzWebUiKitException("解析任务表达式异常,exp = " + exp);
         }
         if (null == expression.getStartAt()) {
             expression.setStartAt(System.currentTimeMillis());
         }
         if (null == expression.getRepeatCount()) {
             expression.setRepeatCount(Integer.MAX_VALUE);
-        }
-        if (null == expression.getCron() && null == expression.getIntervalInMilliseconds()) {
-            throw new QuartzWebUiKitException("解析任务表达式异常,exp = " + exp);
         }
         return expression;
     }

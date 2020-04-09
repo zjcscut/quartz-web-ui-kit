@@ -1,4 +1,4 @@
-package club.throwable.mysql8.example;
+package club.throwable.mysql5.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2020/4/6 23:48
  */
 @SpringBootApplication
-public class App {
+public class Mysql5App {
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(Mysql5App.class, args);
     }
 }
