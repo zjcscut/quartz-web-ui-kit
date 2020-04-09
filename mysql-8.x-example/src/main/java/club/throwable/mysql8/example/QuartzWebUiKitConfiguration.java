@@ -1,4 +1,4 @@
-package club.throwable.h2.example;
+package club.throwable.mysql8.example;
 
 import club.throwable.quartz.kit.configuration.QuartzWebUiKitProperties;
 import club.throwable.quartz.kit.configuration.QuartzWebUiKitPropertiesProvider;

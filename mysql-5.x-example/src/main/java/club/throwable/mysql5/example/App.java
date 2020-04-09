@@ -1,4 +1,4 @@
-package club.throwable.h2.example;
+package club.throwable.mysql5.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package club.throwable.h2.example.task;
+package club.throwable.mysql8.example.task;
 
 import club.throwable.quartz.kit.support.AbstractScheduleTask;
 import lombok.extern.slf4j.Slf4j;
@@ -11,10 +11,10 @@ import org.quartz.JobExecutionContext;
  * @since 2020/4/6 23:55
  */
 @Slf4j
-public class SimpleTask extends AbstractScheduleTask {
+public class CronTask extends AbstractScheduleTask {
 
     @Override
     protected void executeInternal(JobExecutionContext context) {
-        logger.info("SimpleTask触发,TriggerKey:{}", context.getTrigger().getKey().toString());
+        logger.info("CronTask触发,TriggerKey:{}", context.getTrigger().getKey().toString());
     }
 }
