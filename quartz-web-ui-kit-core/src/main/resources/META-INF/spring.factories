@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+club.throwable.quartz.kit.configuration.QuartzWebUiKitConfiguration
