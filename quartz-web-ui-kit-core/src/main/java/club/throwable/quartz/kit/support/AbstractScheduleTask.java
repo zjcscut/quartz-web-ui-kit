@@ -66,7 +66,7 @@ public abstract class AbstractScheduleTask implements Job {
                 long cost = end - start;
                 info.setEnd(end);
                 info.setCost(cost);
-                if (enableLogging() && null != info.getThrowable()) {
+                if (enableLogging() && null == info.getThrowable()) {
                     logger.info("任务[{}]-[{}]-[{}]执行完毕,耗时:{} ms......", task.getTaskId(), task.getTaskClass(),
                             task.getTaskDescription(), cost);
                 }
